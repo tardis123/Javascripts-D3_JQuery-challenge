@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sightings</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.16/datatables.min.css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.3/d3.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jq-3.2.1/dt-1.10.16/datatables.min.js"></script>
+</head>
+
+<body>
+    
+    <!-- Menu -->
+    <div class="col-md-3">
+		<div class="panel panel-default">
+			<div class="panel-body">
+                <dl>
+                <dt><label for="date-input">Enter date (use format M/D/YYYY)</label></dt>
+                <dd><input type="text" id="date-input" style ="width:80px;height:18px"></dd>
+                <dt><label for="city-input">Enter city</label></dt>
+                <dd><input type="text" id="city-input" style ="width:250px;height:18px"></dd>
+                <dt><label for="state-input">Enter state (two character, like CA)</label></dt>
+                <dd><input type="text" id="state-input" style ="width:40px;height:18px"></dd>
+                <dt><label for="country-input">Enter country (two character like US)</label></dt>
+                <dd><input type="text" id="country-input" style ="width:40px;height:18px"></dd>
+                <dt><label for="shape-input">Enter shape</label></dt>
+                <dd><input type="text" id="shape-input" style ="width:80px;height:18px"></dd>
+                </dl>
+                <input id = "search_sightings" type = "submit" value = "Search sightings">
+                <input id = "reset" type = "submit" value = "Reset search">
+            </div>
+        </div>
+    </div>
+
+    <p><img style="padding: 0 10px; float: left;" src="aliens.jpg" alt="Smiley face" width="625"></p>
+    <p> "Welcome home sweetie!"<br>"Oh no, not again" you go.<br> "Told you one day botox might hit back on ya!"<br>
+        Or would you just call 911? Or the local funny farm?<br> Or grab your AR-15? Or use it as <strong>THE</strong>
+        excuse to finally run off with the neighbour?<br>Anyway, here's some ufo sighting data collected between January 2010 and August 2014.<br>
+
+        You can use multiple search filters to narrow down.<br>
+        For instance, searching on city "El Cajon" will show all sightings for El Cajon.<br>
+        If you want to narrow down on shape "triangle" , simply enter and hit Search again.<br>
+        Use the "Reset" button to clear all filters and start another search. Enjoy!
+    </p>
+
+    <div id="table-area"</div>
+    
+    <!-- Page content -->
+
+<!-- load js data file -->
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript"></script>
+
+
+</body>
+</html>
